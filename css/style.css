@@ -96,14 +96,18 @@ a:visited {
 }
 
 @media (prefers-reduced-motion: reduce) {
+    #logo {
+        animation: none;
+    }
+}
+
+@media print {
     body {
         font-family: Arial, Helvetica;
         background-image: none;
     }
 
-    #logo {
-        animation: none;
-    }
+    
 
     header {
         flex-direction: column;
